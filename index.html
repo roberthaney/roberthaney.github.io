@@ -1,1 +1,66 @@
-Hello World!
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Resume</title>
+
+  <!-- Load the page styles. -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!-- Load scripts -->
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div class="container" id="main">
+	
+	<!--Header section with contact info-->
+    <header id="header" class="center-content clear-fix row">
+      <ul id="topContacts" class="flex-box"></ul>
+      <hr>
+    </header>
+    <div style="clear: both;"></div>
+    
+    <!--Content section with information from bio, work and education objects in panel format-->
+    <section class="panel-group row" id="accordion">
+      <div class="panel panel-default">
+        <p><em>Click below to view sections</em></p>
+        <div class="panel-heading col-xs-12" style="background: #aac9d4">
+          <h2 class="panel-title section-head-text"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Work Experience</a></h2>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse col-xs-12">
+          <div id="workExperience" class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading col-xs-12" style="background: #dae4ce">
+          <h2 class="panel-title section-head-text projects"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Website Projects</a></h2>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse col-xs-12">
+          <div id="projects" class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading col-xs-12" style="background: #aac9d4">
+          <h2 class="panel-title section-head-text"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Education</a></h2>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse col-xs-12">
+          <div id="education" class="panel-body">
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <footer class="row flex-box">
+    </footer>
+  </div>
+
+  <script src="js/resumeBuilder.js"></script>
+</body>
+</html>
