@@ -14,17 +14,17 @@ var model = {
   "projects": [{
     "title": "Research Page",
     "description": "Genetics, Genomics and Transcriptomics",
-    "link": "projects/research/index.html"
+    "link": "http://roberthaney.github.io/research"
   },
   {
     "title": "Neighborhood Mountain Map",
     "description": "Get information on local ski resorts",
-    "link": "projects/ski_map/index.html"
+    "link": "http://roberthaney.github.io/ski_map"
   },
   {
     "title": "Classic Arcade Clone",
     "description": "A retro diversion",
-    "link": "projects/arcade_clone/index.html"
+    "link": "http://roberthaney.github.io/arcade_clone"
   },
   ]
  }, 
