@@ -7,7 +7,7 @@ var model = {
 		"github": "roberthaney",
 		"location": "Middlebury"
 	},
-	"skills": ["Front-end web development", "Python", "Perl", "Bioinformatics"], 
+	"skills": ["HTML", "CSS", "JavaScript", "Python", "Perl", "Bioinformatics"], 
 	"photo": "images/Rob_Haney_photo.jpg"
  }, 
  projects: {

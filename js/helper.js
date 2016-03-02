@@ -10,7 +10,7 @@ var HTMLblog = '<li class="flex-item"><span class="pink-text">blog</span><span c
 var HTMLlocation = '<li class="flex-item"><span class="pink-text">location</span><span class="white-text">%data%</span></li>';
 
 var HTMLskillsStart = '<div class="flex-box row"><div class="col-xs-3"><img src="images/Rob_Haney_photo.jpg" class="biopic"></div><div class="col-xs-9"<h3 id="skills-h3"><em>Skills at a Glance:</em></h3><ul id="skills"></ul></div></div>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLskills = '<li class="flex-item"><span class="white-text" id="skills-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
