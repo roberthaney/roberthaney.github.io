@@ -61,6 +61,14 @@ var model = {
  },
  education: {
   "schools": [{
+        "name" : "Udacity",
+        "location" : "Mountain View, CA", 
+        "degree" : "Front-End Nanodegree",
+        "majors" : ["HTML/JavaScript/CSS"],
+        "date" : "2016",
+        "url": "http://www.udacity.edu"
+    },
+    {
         "name" : "Brown University",
         "location" : "Providence, RI", 
         "degree" : "PhD",
@@ -76,37 +84,6 @@ var model = {
         "date" : "2001",
         "url": "http://www.buffalo.edu"
     }
-    ],
-    "onlineCourses": [{
-        "title": "Intro to HTML and CSS",
-        "school": "Udacity",
-        "date": 2015
-    },
-    {
-        "title": "Responsive Web Design Fundamentals",
-        "school": "Udacity",
-        "date": 2015
-    },
-    {
-        "title": "Responsive Images",
-        "school": "Udacity",
-        "date": 2015 
-    },
-    {
-        "title": "How to Use Git and GitHub",
-        "school": "Udacity",
-        "date": 2015 
-    },
-    {
-        "title": "An Introduction to Interactive Programming in Python(Part 1)",
-        "school": "Coursera",
-        "date": 2015 
-    },
-    {
-        "title": "An Introduction to Interactive Programming in Python(Part 2)",
-        "school": "Coursera",
-        "date": 2015 
-    }
     ]
  }
 };
@@ -116,9 +93,9 @@ var view = {
   	var formatted = controller.formatBio();
     $("#header").prepend(formatted.formattedName + formatted.formattedRole);
   	$("#topContacts").append(formatted.formattedEmail);
-  	$("footer").append(formatted.formattedEmail);
+  	$("#footer1").append(formatted.formattedEmail);
   	$("#topContacts").append(formatted.formattedGitHub);
-  	$("footer").append(formatted.formattedGitHub);
+  	$("#footer2").append(formatted.formattedGitHub);
   	$("#header").append(formatted.formattedPhoto);
     $("#header").append(HTMLskillsStart);
     for(var idx = 0; idx < formatted.skills.length; idx++) {

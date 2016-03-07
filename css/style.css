@@ -72,7 +72,8 @@ h5 {
 }
 
 footer {
-  background-color: #737495
+  background-color: #999ab2;
+  padding: 15px;
 }
 
 .section-head-text {
@@ -110,18 +111,12 @@ a {
   display: block;
 }
 
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
-}
-
 #skills-h3 {
   color: #ecf6f9;
   font-weight: bold;
   font-size: 18px;
   text-shadow: 1px 1px #000000;
+  padding-left: 20px;
 }
 
 #skills-text {
@@ -130,10 +125,7 @@ a {
 
 #skills {
   padding-top: 10px;
-}
-
-.center-text {
-	text-align: center;
+  padding-left: 20px;
 }
 
 .pink-text {
@@ -193,4 +185,8 @@ span {
 #collapseTwo {
   background: #f2f2f2;
   opacity: 0.5;
+}
+
+#footer1, #footer2 {
+  text-align: center;
 }
