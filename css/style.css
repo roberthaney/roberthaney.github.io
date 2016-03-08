@@ -19,10 +19,6 @@ img {
   border-radius: 25px;
 }
 
-.clear-fix {
-  overflow: auto;
-}
-
 .education-entry,
 .work-entry,
 .project-entry {
@@ -112,11 +108,15 @@ a {
 }
 
 #skills-h3 {
-  color: #ecf6f9;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 400;
   font-size: 18px;
-  text-shadow: 1px 1px #000000;
-  padding-left: 20px;
+  text-shadow: 1px 1px #578c22;
+  padding-top: 5px;
+}
+
+#topContacts {
+  border: 2px solid white;
 }
 
 #skills-text {
@@ -124,8 +124,10 @@ a {
 }
 
 #skills {
-  padding-top: 10px;
-  padding-left: 20px;
+  text-align: left;
+  padding-left: 0px;
+  color: #ffffff;
+  border-bottom: 1px solid white;
 }
 
 .pink-text {
@@ -149,10 +151,6 @@ a {
   padding-bottom: 10px;
 }
 
-#header {
-  background: linear-gradient(to left, #999ab2, #a8a9bd);
-}
-
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -162,19 +160,22 @@ a {
   padding: 10px;
 }
 
-.center-content {
+#header {
+  background: linear-gradient(to left, #999ab2, #a8a9bd);
   padding: 2.5% 5%;
+  overflow: auto;
 }
 
 ul {
   list-style-type: none;
 }
 
-.biopic {
-  float: left;
-  padding: 10px;
+#biopic {
+  margin-top: 30px;
+  margin-left: 30px;
   width: 50%;
-  min-width: 75px;
+  min-width: 100px;
+  max-width: 200px;
 }
 
 span {
@@ -189,4 +190,10 @@ span {
 
 #footer1, #footer2 {
   text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  #biopic {
+    margin-left: 80px;
+  }
 }

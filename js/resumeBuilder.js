@@ -7,7 +7,8 @@ var model = {
 		"github": "roberthaney",
 		"location": "Middlebury"
 	},
-	"skills": ["HTML", "CSS", "JavaScript", "Python", "Perl", "Bioinformatics"], 
+	"languages": ["HTML", "CSS", "JavaScript", "Python", "Perl"],
+  "libraries" :["jQuery", "Bootstrap", "Knockout", "Backbone", "Jasmine"], 
 	"photo": "images/Rob_Haney_photo.jpg"
  }, 
  projects: {
@@ -96,10 +97,12 @@ var view = {
   	$("#footer1").append(formatted.formattedEmail);
   	$("#topContacts").append(formatted.formattedGitHub);
   	$("#footer2").append(formatted.formattedGitHub);
-  	$("#header").append(formatted.formattedPhoto);
-    $("#header").append(HTMLskillsStart);
-    for(var idx = 0; idx < formatted.skills.length; idx++) {
-      $("#skills").append(formatted.skills[idx]);
+  	$("#biopic").append(formatted.formattedPhoto);
+    for(var idx = 0; idx < formatted.languages.length; idx++) {
+      $("#languages").append(formatted.languages[idx]);
+    };
+    for(var idx = 0; idx < formatted.libraries.length; idx++) {
+      $("#libraries").append(formatted.libraries[idx]);
     };
  },
  projectsDisplay: function () {
@@ -149,9 +152,13 @@ var controller = {
     formatted.formattedRole = HTMLheaderRole.replace("%data%", model.bio.role);
     formatted.formattedEmail = HTMLemail.replace("%data%", model.bio.contacts.email);
     formatted.formattedGitHub = HTMLgithub.replace("%data%", model.bio.contacts.github);
-    formatted.skills = [];
-    for(var idx = 0; idx < model.bio.skills.length; idx++) {
-      formatted.skills.push(HTMLskills.replace("%data%", model.bio.skills[idx]));
+    formatted.languages = [];
+    formatted.libraries = [];
+    for(var idx = 0; idx < model.bio.languages.length; idx++) {
+      formatted.languages.push(HTMLskills.replace("%data%", model.bio.languages[idx]));
+    };
+    for(var idx = 0; idx < model.bio.libraries.length; idx++) {
+      formatted.libraries.push(HTMLskills.replace("%data%", model.bio.libraries[idx]));
     };
     return formatted;
   },
