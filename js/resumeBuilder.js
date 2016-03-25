@@ -93,9 +93,9 @@ var view = {
  bioDisplay: function() {
   	var formatted = controller.formatBio();
     $("#header").prepend(formatted.formattedName + formatted.formattedRole);
-  	$("#topContacts").append(formatted.formattedEmail);
+  	$("#contact1").append(formatted.formattedEmail);
   	$("#footer1").append(formatted.formattedEmail);
-  	$("#topContacts").append(formatted.formattedGitHub);
+  	$("#contact2").append(formatted.formattedGitHub);
   	$("#footer2").append(formatted.formattedGitHub);
   	$("#biopic").append(formatted.formattedPhoto);
     for(var idx = 0; idx < formatted.languages.length; idx++) {

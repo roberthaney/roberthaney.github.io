@@ -3,8 +3,8 @@
 var HTMLheaderName = '<h1>%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span>';
 
-var HTMLemail = '<li><span class="pink-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li><span class="pink-text">github</span><span class="white-text">%data%</span></li>';
+var HTMLemail = '<span class="pink-text">email</span><span class="white-text">%data%</span>';
+var HTMLgithub = '<span class="pink-text">github</span><span class="white-text">%data%</span>';
 
 var HTMLskills = '<li><span class="white-text" id="skills-text">%data%</span></li>';
 
@@ -25,10 +25,3 @@ var HTMLschoolDegree = ': %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
-
-
-
-
-
-
-
