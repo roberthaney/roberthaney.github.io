@@ -35,14 +35,16 @@ var model = {
         "title" : "Postdoctoral Researcher",
         "location" : "Lowell, MA",
         "dates" : "2013-present",
-        "description" : "Next-generation sequencing analysis of spider venom and silk"
+        "description" : "Next-generation sequencing analysis of spider venom and silk",
+        "url": "http://www.uml.edu"
     },
     {
         "employer": "Northeastern University",
         "title" : "Postdoctoral Researcher/Adjunct Professor",
         "location" : "Nahant, MA",
         "dates" : "2012-2014",
-        "description" : "Taught course in Marine Invertebrate Zoology"
+        "description" : "Taught course in Marine Invertebrate Zoology",
+        "url": "http://www.northeastern.edu/"
     },
     {
         "employer": "Harvard University",
@@ -50,13 +52,15 @@ var model = {
         "location" : "Cambridge, MA",
         "dates" : "2010-2012",
         "description" : "Researched molecular mechanisms of aging in bdelloid rotifers",
+        "url": "http://www.harvard.edu/"
     },
     {
         "employer": "University of Chicago",
         "title" : "Postdoctoral Scholar",
         "location" : "Chicago, IL",
         "dates" : "2007-2010",
-        "description" : "Studied heat-shock regulatory evolution in Drosophila"
+        "description" : "Studied heat-shock regulatory evolution in Drosophila",
+        "url": "http://www.uchicago.edu/"
     }  
     ]
  },
@@ -67,7 +71,7 @@ var model = {
         "degree" : "Front-End Nanodegree",
         "majors" : ["HTML/JavaScript/CSS"],
         "date" : "2016",
-        "url": "http://www.udacity.edu"
+        "url": "http://www.udacity.com"
     },
     {
         "name" : "Brown University",
@@ -122,7 +126,8 @@ var view = {
   var formatted = controller.formatWork();
   for (var entry = 0; entry < formatted.length; entry++) {
     $('#workExperience').append(HTMLworkStart);
-    $('.work-entry:last').append(formatted[entry].formattedEmployer + formatted[entry].formattedTitle);
+    var formattedEmployer = formatted[entry].formattedEmployer.replace("%url%", model.work.jobs[entry].url);
+    $('.work-entry:last').append(formattedEmployer + formatted[entry].formattedTitle);
     $('.work-entry:last').append(formatted[entry].formattedLocation);
     $('.work-entry:last').append(formatted[entry].formattedDates);
     $('.work-entry:last').append(formatted[entry]. formattedDescription);
@@ -132,7 +137,8 @@ var view = {
     var formatted = controller.formatEducation();
     for (var entry  = 0; entry < formatted.length; entry++) {
       $('#education').append(HTMLschoolStart);
-      $('.education-entry:last').append(formatted[entry].formattedSchoolName + formatted[entry].formattedDegree + formatted[entry].formattedSchoolLocation);
+      var formattedSchoolName = formatted[entry].formattedSchoolName.replace("%url%", model.education.schools[entry].url);
+      $('.education-entry:last').append(formattedSchoolName + formatted[entry].formattedDegree + formatted[entry].formattedSchoolLocation);
       $('.education-entry:last').append(formatted[entry].formattedDates);
       $('.education-entry:last').append(formatted[entry].formattedmajor);
     };
