@@ -76,23 +76,23 @@ footer {
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
-  line-height: 16px;
+  color: #737373;
+  line-height: 150%;
   float: left;
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
-  line-height: 16px;
+  color: #737373;
   float: right;
 }
 
 p {
   font-size: 14px;
   color: #333;
-  line-height: 21px;
+  padding-top: 8px;
+  padding-left: 5px;
 }
 
 a {
