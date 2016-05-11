@@ -69,8 +69,11 @@ footer {
 }
 
 .section-head-text {
-	color: #737495;
+	color: #394d60;
 	font-size: 22px;
+  text-shadow: 0 1px 0 #dfe6ec, 0 2px 0 #bfccd9, 0 3px 0 #afc0cf, 0 4px 0 #8fa6bc, 0 5px 0 #809ab3,
+  0 5px 1px rgba(0,0,0,.5), 0 0 5px rgba(0,0,0,.4), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.3), 
+  0 5px 5px rgba(0,0,0,.3), 0 5px 5px rgba(0,0,0,.3), 0 5px 5px rgba(0,0,0,.3);
 }
 
 .date-text {
