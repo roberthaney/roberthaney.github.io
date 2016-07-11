@@ -54,6 +54,7 @@ footer {
   border: 3px solid #a6a6a6;
   max-width: 1400px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 #footer-insert {
@@ -71,6 +72,7 @@ footer {
 .section-head-text {
 	color: #394d60;
 	font-size: 22px;
+  margin-top: 10px;
 }
 
 .date-text {
@@ -158,10 +160,12 @@ ul {
 
 .panel .panel-heading {
   background-color: #aac9d4;
+  min-height: 100px;
 }
 
 .panel-group .panel #middle-panel {
-  background-color: #ecf6f9;
+  /*background-color: #ecf6f9;*/
+  background-image: radial-gradient(#aac9d4, #ecf6f9);
 }
 
 #biopic {
