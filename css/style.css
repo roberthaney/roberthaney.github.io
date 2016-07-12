@@ -75,6 +75,12 @@ footer {
   margin-top: 10px;
 }
 
+.section-head-text:hover {
+  font-size: 28px;
+  text-shadow: 1px 1px #ffffff;
+  font-style: italic;
+}
+
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -150,6 +156,12 @@ a {
 
 #header {
   background: linear-gradient(to left, #999ab2, #a8a9bd);
+  padding: 2.5% 5%;
+  overflow: auto;
+}
+
+#header:hover {
+  background: linear-gradient(to left, #a8a9bd, #999ab2);
   padding: 2.5% 5%;
   overflow: auto;
 }
