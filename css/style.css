@@ -155,15 +155,10 @@ a {
 }
 
 #header {
-  background: linear-gradient(to left, #999ab2, #a8a9bd);
+  background-image: linear-gradient(to left, #999ab2, #a8a9bd);
   padding: 2.5% 5%;
   overflow: auto;
-}
-
-#header:hover {
-  background: linear-gradient(to left, #a8a9bd, #999ab2);
-  padding: 2.5% 5%;
-  overflow: auto;
+  animation: opaque .7s ease-in;
 }
 
 ul {
@@ -176,7 +171,6 @@ ul {
 }
 
 .panel-group .panel #middle-panel {
-  /*background-color: #ecf6f9;*/
   background-image: radial-gradient(#aac9d4, #ecf6f9);
 }
 
@@ -209,3 +203,13 @@ span {
     margin-left: 80px;
   }
 }
+
+@keyframes opaque {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
