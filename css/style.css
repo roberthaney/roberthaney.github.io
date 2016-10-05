@@ -3,10 +3,19 @@ img {
   border-radius: 25px;
 }
 
+
 .education-entry,
 .work-entry,
 .project-entry {
   padding: 0 2% 1% 2%;
+}
+
+.education-entry, .work-entry {
+  border: 2px solid #676f7c;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px black;
+  background-color: #f0f1f4;
 }
 
 .container {
