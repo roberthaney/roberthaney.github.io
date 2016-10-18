@@ -119,12 +119,13 @@ a {
   display: block;
 }
 
-#skills-h3 {
+.skills-h3 {
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
   text-shadow: 1px 1px #578c22;
-  padding-top: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #topContacts {
@@ -135,11 +136,20 @@ a {
   font-size: 14px;
 }
 
-#skills {
+#header .skills {
+  width: 50%;
+}
+
+#languages, #libraries {
+  padding-top: 0;
+}
+
+#skills-header {
   text-align: left;
   padding-left: 0px;
   color: #ffffff;
   border-bottom: 1px solid white;
+  font-family: cursive;
 }
 
 .pink-text {
