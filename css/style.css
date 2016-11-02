@@ -63,7 +63,8 @@ footer {
   border: 3px solid #a6a6a6;
   max-width: 1400px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #footer-insert {
@@ -176,7 +177,6 @@ a {
 #header {
   background-image: linear-gradient(to left, #999ab2, #a8a9bd);
   padding: 2.5% 5%;
-  overflow: auto;
   animation: opaque .7s ease-in;
 }
 
@@ -189,8 +189,14 @@ ul {
   min-height: 100px;
 }
 
-.panel-group .panel #middle-panel {
+.panel-group #middle-panel .panel-heading {
   background-image: radial-gradient(#aac9d4, #ecf6f9);
+}
+
+#accordion {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
 }
 
 #biopic {

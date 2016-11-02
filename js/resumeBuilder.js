@@ -1,13 +1,13 @@
 var model = { 
  bio: {
 	"name": "Rob Haney",
-	"role": "Front End Web Development",
+	"role": "Web Development",
 	"contacts": {
 		"email": "robert.a.haney@gmail.com",
 		"github": "roberthaney",
 		"location": "Middlebury"
 	},
-	"languages": ["HTML", "CSS", "JavaScript", "Python", "Perl"],
+	"languages": ["SQL", "HTML", "CSS", "JavaScript", "Python", "Perl"],
   "libraries" :["jQuery", "Bootstrap", "Knockout", "Backbone", "Jasmine"], 
 	"photo": "images/Rob_Haney_photo.jpg"
  }, 
