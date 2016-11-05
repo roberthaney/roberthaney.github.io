@@ -3,7 +3,6 @@ img {
   border-radius: 25px;
 }
 
-
 .education-entry,
 .work-entry,
 .project-entry {
@@ -124,13 +123,16 @@ a {
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
-  text-shadow: 1px 1px #578c22;
+  text-shadow: 1px 1px #aac9d4;
   padding-top: 0;
   padding-bottom: 0;
 }
 
 #topContacts {
   border: 2px solid white;
+  background-image: url("../images/stardust.png");
+  box-shadow: 3px 3px #000000;
+  margin-top: 5px;
 }
 
 #skills-text {
@@ -139,6 +141,7 @@ a {
 
 #header .skills {
   width: 50%;
+  margin-top: -15px;
 }
 
 #languages, #libraries {

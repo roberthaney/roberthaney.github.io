@@ -100,9 +100,7 @@ var view = {
   	var formatted = controller.formatBio();
     $("#header").prepend(formatted.formattedName + formatted.formattedRole);
   	$("#contact1").append(formatted.formattedEmail);
-  	$("#footer1").append(formatted.formattedEmail);
   	$("#contact2").append(formatted.formattedGitHub);
-  	$("#footer2").append(formatted.formattedGitHub);
   	$("#biopic").append(formatted.formattedPhoto);
     for(var idx = 0; idx < formatted.languages.length; idx++) {
       $("#languages").append(formatted.languages[idx]);
