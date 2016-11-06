@@ -24,36 +24,29 @@ img {
 
 h1 {
   font-size: 40px;
+  font-family: Rockwell, serif;
   color: #ffe6ff;
   text-shadow: 2px 2px #000000;
   line-height: 48px;
   display: inline;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999;
-  line-height: 29px;
-  padding: 10px;
-}
-
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000;
-  line-height: 22px;
+  color: #ffffff;
+  font-family: Rockwell, serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-shadow: 2px 2px #88b3c3;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
-}
-
-h2, h3, h4, h5 {
-  padding:10px 5%;
+h5 {
+  text-align: left;
+  padding: 5px 0 5px 0;
+  color: #ffffff;
+  border-bottom: 1px solid white;
+  font-family: Verdana, serif;
 }
 
 footer {
@@ -79,9 +72,12 @@ footer {
 }
 
 .section-head-text {
-	color: #394d60;
+	font-weight: bold;
+  color: #394d60;
+  font-family: Verdana;
 	font-size: 22px;
   margin-top: 10px;
+  padding:10px 10%;
 }
 
 .section-head-text:hover {
@@ -119,15 +115,6 @@ a {
   display: block;
 }
 
-.skills-h3 {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 18px;
-  text-shadow: 1px 1px #aac9d4;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 #topContacts {
   border: 2px solid white;
   background-image: url("../images/stardust.png");
@@ -148,15 +135,14 @@ a {
   padding-top: 0;
 }
 
-#skills-header {
-  text-align: left;
-  padding-left: 0px;
+span {
+  font-family: Verdana, serif;
+  padding: 5px;
   color: #ffffff;
-  border-bottom: 1px solid white;
-  font-family: cursive;
 }
 
 .pink-text {
+  font-weight: bold;
   color: #ffe6ff;
   text-shadow: 1px 1px #000000;
 }
@@ -208,11 +194,6 @@ ul {
   width: 50%;
   min-width: 100px;
   max-width: 200px;
-}
-
-span {
-  padding: 5px;
-  color: #ffffff;
 }
 
 #collapseTwo {
