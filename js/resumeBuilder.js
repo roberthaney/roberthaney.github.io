@@ -27,6 +27,11 @@ var model = {
     "description": "A retro diversion",
     "link": "http://roberthaney.github.io/arcade_clone"
   },
+  {
+    "title": "Hair Network",
+    "description": "Hair salon in Middlebury",
+    "link": "http://www.hair-network.com"
+  }
   ]
  }, 
  work: {
