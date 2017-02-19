@@ -30,7 +30,7 @@ var model = {
   {
     "title": "Hair Network",
     "description": "Hair salon in Middlebury",
-    "link": "http://www.hair-network.com"
+    "link": "http://www.hairnetworkvt.com"
   }
   ]
  }, 
